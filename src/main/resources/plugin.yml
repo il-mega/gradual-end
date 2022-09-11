@@ -1,0 +1,4 @@
+name: GradualEnd
+main : me.megapvp.gradualend.GradualEndPlugin
+version: ${version}
+author: MegaPVP
