@@ -12,9 +12,7 @@ import me.megapvp.gradualend.command.GradualEndCommand;
 import me.megapvp.gradualend.listener.ProxyListener;
 
 import java.lang.reflect.Field;
-import java.util.Arrays;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 @Plugin(id = "gradual-end")
 public class GradualEndPlugin {
