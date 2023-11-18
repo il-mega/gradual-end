@@ -19,7 +19,7 @@ public class GradualEndCommand implements SimpleCommand {
             invocation.source().sendMessage(Component.text("The proxy is already in the process of gradually rebooting and will finish once all players have disconnected, to force a shutdown use /end"));
         } else {
             this.plugin.setEnding(true);
-            this.plugin.shutdownConnectionManager();
+            this.plugin.getProxyServer().closeListeners();
             invocation.source().sendMessage(Component.text("The proxy will now gradually end and stop listening for new connections on this port, you may start a new instance."));
         }
     }
